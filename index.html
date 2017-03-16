@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pond Interface</title>
+		<link type="text/css" rel="stylesheet" href="css/cssReset.css"/>
+		<link type="text/css" rel="stylesheet" href="css/gemini-scrollbar.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+		<script src="js/gemini-scrollbar.js"></script>
+	</head>
+	<body>
+		<div id="content">
+		</div>
+		<div id="invisNav"></div>
+		<div id="leftNav">
+			<div id="buttons">
+				<div class="button active"><h2>Status</h2><img src="icons/status.png" /></div>
+				<div class="button"><h2>Moderation</h2><img src="icons/mod.png" /></div>
+				<div class="button"><h2>Roles</h2><img src="icons/roles.png" /></div>
+				<div class="button"><h2>Custom Commands</h2><img src="icons/custom.png" /></div>
+				<div class="button"><h2>Timers</h2><img src="icons/timers.png" /></div>
+				<div class="button"><h2>Quotes</h2><img src="icons/quotes.png" /></div>
+				<div class="button"><h2>Polls</h2><img src="icons/polls.png" /></div>
+				<div class="button"><h2>Ponder</h2></div>
+			</div>
+			<div id="addModule">
+				<div><div><h3>+</h3></div></div>
+			</div>
+		</div>
+		<div id="topNav">
+			<div id="logo"><h1>&lt;@ponderyier&gt;</h1></div>
+			<div id="navInt">
+				<div class="icon" id="settings">
+					<img src="img/Settings.png">
+				</div>
+				<div class="icon" id="twitch">
+					<img src="img/Glitch_White_RGB.png">
+				</div>
+				<div class="icon" id="discord">
+					<img src="img/Discord-Logo-White.png">
+				</div>
+				<div class="icon" id="add">
+					<img src="img/Add.png">
+				</div>
+			</div>
+			<div id="windowButtons">
+				<div id="minimize" class="win">&#128469;</div>
+				<div id="maximize" class="win">&#128470;</div>
+				<div id="close" class="win">&#128473;</div>
+			</div>
+		</div>
+		<script>
+			var navBar = new GeminiScrollbar({
+				element: document.querySelector('#navInt')
+			}).create();
+		</script>
+    </body>
+</html>
