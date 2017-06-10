@@ -10,11 +10,11 @@
 				opacity: 0;
 				transition: opacity 0.5s;
 			}
-			
+
 			body {
 				overflow: hidden;
 			}
-			
+
 			#loadAnim {
 				width: 128px;
 				height: 128px;
@@ -22,7 +22,7 @@
 				left: 36px;
 				position: absolute;
 			}
-			
+
 			#progress {
 				width: 64px;
 				height: 64px;
@@ -33,7 +33,7 @@
 				opacity: 0;
 				transition: opacity 2s;
 			}
-			
+
 			.opacity {
 				opacity: 1 !important;
 			}
@@ -45,7 +45,9 @@
 			<div id="progress">
 			</div>
 		</div>
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 		<script src="js/bodymovin.js" type="text/javascript"></script>
+		<script>if (window.module) module = window.module;</script>
 		<script>
 			document.getElementById('content').className = "opacity";
 			bodymovin.loadAnimation({
