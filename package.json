@@ -1,0 +1,22 @@
+{
+  "name": "pond-gui",
+  "version": "1.0.0",
+  "description": "Electron GUI for Ponderyier",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VodBox/PondGUI.git"
+  },
+  "author": "VodBox (Dillon)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/VodBox/PondGUI/issues"
+  },
+  "homepage": "https://github.com/VodBox/PondGUI#readme",
+  "dependencies": {
+    "electron": "^1.6.2"
+  }
+}
