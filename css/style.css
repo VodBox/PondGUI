@@ -202,6 +202,8 @@ body {
 	white-space: nowrap;
 	overflow-x: auto;
 	overflow-y: hidden;
+	-webkit-app-region: drag;
+	-webkit-user-select: none;
 }
 
 h1 {
@@ -241,10 +243,10 @@ h1 {
 }
 
 .icon {
-	height: calc(var(--navHeight) * 0.75);
-	width: calc(var(--navHeight) * 0.75);
-	margin-top: calc(var(--navHeight) * 0.125 - 2px);
-	margin-left: calc(var(--navHeight) * 0.125);
+	height: calc(var(--navHeight) * 0.72);
+	width: calc(var(--navHeight) * 0.72);
+	margin-top: calc(var(--navHeight) * 0.14 - 2px);
+	margin-left: calc(var(--navHeight) * 0.14);
 	border-radius: 50%;
 	transition: border-radius 0.3s cubic-bezier(0.34, 0.33, 0.4, 2.29), box-shadow 0.1s, transform 0.1s;
 	cursor: pointer;
@@ -256,6 +258,7 @@ h1 {
 	box-shadow: 2px 2px 0px 1px rgba(225,225,225,1);
 	display: inline-block;
 	padding-top: 2px;
+	-webkit-app-region: no-drag;
 }
 
 .icon:hover {
@@ -270,8 +273,8 @@ h1 {
 
 .icon img {
 	padding: 12px;
-	height: calc(var(--navHeight) * 0.75 - 24px);
-	width: calc(var(--navHeight) * 0.75 - 24px);
+	height: calc(var(--navHeight) * 0.72 - 24px);
+	width: calc(var(--navHeight) * 0.72 - 24px);
 }
 
 #twitch {
@@ -373,6 +376,11 @@ h1 {
 	margin-top: 6px;
 	border-radius: 50%;
 	background-color: #333333;
+}
+
+.gm-scrollbar {
+	-webkit-app-region: no-drag;
+	z-index: 2;
 }
 
 .gm-scrollbar .thumb {
