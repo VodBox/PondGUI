@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/cssReset.css"/>
+		<style>
+			#content {
+				width: 200px;
+				height: 250px;
+				background-color: #00674d;
+				position: fixed;
+				opacity: 0;
+				transition: opacity 0.5s;
+			}
+			
+			body {
+				overflow: hidden;
+			}
+			
+			#loadAnim {
+				width: 128px;
+				height: 128px;
+				top: 5px;
+				left: 36px;
+				position: absolute;
+			}
+			
+			#progress {
+				width: 64px;
+				height: 64px;
+				bottom: 20px;
+				left: 68px;
+				position: absolute;
+				filter: drop-shadow(4px 4px 3px rgba(0,0,0,0.1));
+				opacity: 0;
+				transition: opacity 2s;
+			}
+			
+			.opacity {
+				opacity: 1 !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<video id="loadAnim" autoplay="true" src="splash.webm"></video>
+			<div id="progress">
+			</div>
+		</div>
+		<script src="js/bodymovin.js" type="text/javascript"></script>
+		<script>
+			document.getElementById('content').className = "opacity";
+			bodymovin.loadAnimation({
+				renderer: "svg",
+				path: "./loading.json",
+				container: document.getElementById("progress")
+			});
+			window.setTimeout(function() {
+				document.getElementById("progress").className = "opacity";
+			}, 300);
+		</script>
+	</body>
+</html>
